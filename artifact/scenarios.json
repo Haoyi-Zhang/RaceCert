@@ -1,0 +1,8 @@
+[
+  {"scenarioId":"baseline-a","label":"Path A is forced","sendAUs":"0","sendBUs":"500","recvAUs":"9000","recvBUs":"12000","closeUs":"15000","epsilonSenderPpm":"200","epsilonReceiverPpm":"200","etaSenderUs":"1","etaReceiverUs":"1","marginUs":"500"},
+  {"scenarioId":"neutral","label":"Neither path beats the margin","sendAUs":"0","sendBUs":"500","recvAUs":"10000","recvBUs":"10520","closeUs":"15000","epsilonSenderPpm":"200","epsilonReceiverPpm":"200","etaSenderUs":"1","etaReceiverUs":"1","marginUs":"500"},
+  {"scenarioId":"baseline-b","label":"Path B is forced","sendAUs":"0","sendBUs":"500","recvAUs":"13000","recvBUs":"10000","closeUs":"15000","epsilonSenderPpm":"200","epsilonReceiverPpm":"200","etaSenderUs":"1","etaReceiverUs":"1","marginUs":"500"},
+  {"scenarioId":"censored-boundary","label":"Censored boundary: I = (-infinity, -1000] us","sendAUs":"0","sendBUs":"500","recvAUs":"9000","recvBUs":null,"closeUs":"10500","epsilonSenderPpm":"0","epsilonReceiverPpm":"0","etaSenderUs":"0","etaReceiverUs":"0","marginUs":"1000"},
+  {"scenarioId":"a-only","label":"Only A arrives: force A","sendAUs":"0","sendBUs":"500","recvAUs":"9000","recvBUs":null,"closeUs":"11500","epsilonSenderPpm":"200","epsilonReceiverPpm":"200","etaSenderUs":"1","etaReceiverUs":"1","marginUs":"500"},
+  {"scenarioId":"disconnected","label":"No arrival: all three outcomes feasible","sendAUs":"0","sendBUs":"500","recvAUs":null,"recvBUs":null,"closeUs":"12000","epsilonSenderPpm":"200","epsilonReceiverPpm":"200","etaSenderUs":"1","etaReceiverUs":"1","marginUs":"500"}
+]

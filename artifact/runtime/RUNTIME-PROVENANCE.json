@@ -1,0 +1,23 @@
+{
+  "packagedAt": "2026-10-13T13:49:39.953Z",
+  "platform": "Windows x64",
+  "node": {
+    "version": "24.19.0",
+    "origin": "Copied from an existing local bundled Node.js distribution; not downloaded during preparation.",
+    "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237",
+    "licenseSource": "https://raw.githubusercontent.com/nodejs/node/v24.19.0/LICENSE",
+    "licenseFile": "win-x64/NODE-LICENSE.txt",
+    "license": "MIT plus retained upstream third-party notices"
+  },
+  "python": {
+    "version": "3.13.16",
+    "kind": "Official Windows embeddable x64 ZIP, stdlib only, unmodified extracted distribution",
+    "downloadUrl": "https://www.python.org/ftp/python/3.13.16/python-3.13.16-embed-amd64.zip",
+    "checksumSource": "https://www.python.org/downloads/release/python-31316/",
+    "officialSha256": "97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297",
+    "downloadSha256MatchesOfficial": true,
+    "licenseFile": "win-x64/python/LICENSE.txt"
+  },
+  "runtimeNetworkAccess": "None; downloads occurred only while preparing the package.",
+  "prerequisites": "Windows x64 and an installed web browser. Source/macOS/Linux packages need Node.js >=20 and Python 3."
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RaceCert - exact localhost demonstration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">MobiCom 2026 ACM SRC / Companion Demo #95</p>
+        <h1>RaceCert</h1>
+        <p>Huaijin Ran - Nanyang Technological University<br>Haoyi Zhang - Xi’an Jiaotong-Liverpool University</p>
+        <p class="lede">Which path decision is forced by this trace?</p>
+        <p><a href="guided.html">Open the six-step guided booth</a></p>
+      </div>
+      <div class="boundary"><span>Evidence boundary</span><strong>Localhost UDP + projected logical clocks</strong><small>Not cellular, radio, mobility, or field evidence</small></div>
+    </header>
+
+    <section class="status-strip" aria-label="Implementation status">
+      <span>BigInt rational producer</span>
+      <span>Standalone JS verifier</span>
+      <span>Python Fraction verifier</span>
+      <span id="runtimeStatus">Checking runtime...</span>
+    </section>
+
+    <section class="card controls" aria-labelledby="controls-title">
+      <div class="section-heading full"><div><p class="eyebrow">Run a race</p><h2 id="controls-title">Frozen proof or live capture</h2></div><p id="scenarioDescription" class="subtle"></p></div>
+      <label class="scenario-field">Scenario<select id="scenario"></select></label>
+      <label>Sender rate error (ppm)<input id="epsilonSenderPpm" inputmode="numeric" pattern="[0-9]+"></label>
+      <label>Receiver rate error (ppm)<input id="epsilonReceiverPpm" inputmode="numeric" pattern="[0-9]+"></label>
+      <label>Timestamp error (us)<input id="eta" inputmode="numeric" pattern="[0-9]+"></label>
+      <label>Policy margin (us)<input id="marginUs" inputmode="numeric" pattern="[0-9]+"></label>
+      <div class="actions full"><button id="run">Run and certify</button><button id="reset" class="secondary">Reset inputs</button><span id="runNote" class="subtle"></span></div>
+      <p id="runStatus" class="run-status full pending" role="status" aria-live="polite">Waiting for a certificate.</p>
+    </section>
+
+    <section class="result-layout">
+      <article class="card verdict-card">
+        <p class="eyebrow">Certificate verdict</p>
+        <div class="verdict-line"><h2 id="outcome">-</h2><span id="sourceBadge" class="source-badge">No run</span></div>
+        <p id="evidence" class="subtle">Choose a scenario and run it.</p>
+        <p id="censoringConvention" class="subtle" hidden>Missing arrivals may occur at or after receiver close.</p>
+        <div class="policy-axis" aria-label="Feasible policy regions, schematic not to scale"><span>force A</span><span>neutral</span><span>force B</span></div>
+        <div class="policy-track"><div id="intervalMarker"></div></div>
+        <code id="intervalText">I = -</code>
+        <p class="digest">SHA-256 <code id="digest">-</code></p>
+      </article>
+
+      <article class="card checker-card">
+        <p class="eyebrow">Independent recomputation</p>
+        <div class="checker-grid">
+          <div id="jsChecker" class="checker pending"><strong>JavaScript BigInt</strong><span>Waiting</span></div>
+          <div id="pyChecker" class="checker pending"><strong>Python Fraction</strong><span>Waiting</span></div>
+        </div>
+        <button id="tamper" class="danger" disabled>Tamper semantic field, rehash, recheck</button>
+        <p id="tamperResult" class="subtle">The altered object must be rejected after its hash is made internally consistent.</p>
+      </article>
+    </section>
+
+    <section class="detail-layout">
+      <article class="card">
+        <div class="section-heading"><div><p class="eyebrow">Trace evidence</p><h2>Captured events</h2></div><span id="captureMode" class="source-badge">-</span></div>
+        <ol id="timeline" class="timeline"><li>No capture yet.</li></ol>
+      </article>
+      <article class="card">
+        <div class="section-heading"><div><p class="eyebrow">Constructive ambiguity</p><h2>Counterworlds</h2></div><span id="witnessCount" class="count-badge">0</span></div>
+        <div id="witnesses" class="witnesses"><p class="subtle">No certificate yet.</p></div>
+      </article>
+    </section>
+
+    <section class="card batch-card">
+      <div class="section-heading"><div><p class="eyebrow">Fixed denominator</p><h2>Batch aggregation</h2></div><span id="batchSize" class="count-badge">0 races</span></div>
+      <p class="subtle">Neutral, ambiguous, and censored races remain in the denominator. Only more than N/2 forced races can certify a path majority.</p>
+      <div class="actions"><button id="addBatch" class="secondary" disabled>Add current certificate</button><button id="aggregate" disabled>Verify batch</button><button id="loadCampaign" class="secondary">Replay retained 512 races</button><button id="clearBatch" class="ghost" disabled>Clear</button></div>
+      <div id="batchResult" class="batch-result"><span>No batch yet.</span></div>
+    </section>
+
+    <details class="card raw-card">
+      <summary>Inspect canonical certificate JSON</summary>
+      <pre id="certificate">No certificate yet.</pre>
+    </details>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

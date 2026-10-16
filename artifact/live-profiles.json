@@ -1,0 +1,40 @@
+[
+  {
+    "scenarioId": "live-delay",
+    "label": "Live UDP: asymmetric delay",
+    "description": "Both datagrams traverse the relay; A is forwarded earlier than B.",
+    "deadlineMs": "45", "arrivalBudgetMs": "500", "closeAfterRouted": true, "lateGraceMs": "12", "sendGapMs": "2",
+    "relayOrder": ["A", "B"],
+    "pathA": {"delayMs": "6", "drop": false}, "pathB": {"delayMs": "18", "drop": false}
+  },
+  {
+    "scenarioId": "live-reorder",
+    "label": "Live UDP: induced reordering",
+    "description": "A is sent first but the relay delays it long enough for B to arrive first.",
+    "deadlineMs": "45", "arrivalBudgetMs": "500", "closeAfterRouted": true, "lateGraceMs": "12", "sendGapMs": "3",
+    "relayOrder": ["B", "A"],
+    "pathA": {"delayMs": "22", "drop": false}, "pathB": {"delayMs": "3", "drop": false}
+  },
+  {
+    "scenarioId": "live-drop",
+    "label": "Live UDP: selective drop",
+    "description": "The relay drops B; A contributes one-sided evidence at close.",
+    "deadlineMs": "30", "arrivalBudgetMs": "500", "closeAfterRouted": true, "lateGraceMs": "10", "sendGapMs": "2",
+    "pathA": {"delayMs": "5", "drop": false}, "pathB": {"delayMs": "4", "drop": true}
+  },
+  {
+    "scenarioId": "live-deadline",
+    "label": "Live UDP: B misses deadline",
+    "description": "B is forwarded after close and is logged as late rather than assigned a finite penalty.",
+    "deadlineMs": "20", "lateGraceMs": "38", "sendGapMs": "2",
+    "pathA": {"delayMs": "4", "drop": false}, "pathB": {"delayMs": "36", "drop": false}
+  },
+  {
+    "scenarioId": "live-disconnect-recovery",
+    "label": "Live UDP: disconnect then recovery",
+    "description": "A first round is dropped; a second race is emitted after recovery and certified from that capture.",
+    "deadlineMs": "42", "arrivalBudgetMs": "500", "closeAfterRouted": true, "lateGraceMs": "12", "sendGapMs": "2", "recoveryAfterMs": "9",
+    "pathA": {"delayMs": "5", "drop": false}, "pathB": {"delayMs": "9", "drop": false},
+    "prelude": {"dropBoth": true}
+  }
+]

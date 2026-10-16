@@ -1,0 +1,38 @@
+{
+  "schema": "racecert-campaign-summary-v1",
+  "generator": "xorshift64-v1",
+  "seed": "20260812",
+  "runs": "512",
+  "counts": {
+    "force-a": "176",
+    "neutral": "12",
+    "force-b": "191",
+    "ambiguous": "133"
+  },
+  "decision": "no-forced-path-majority",
+  "batchDigest": "de9ca4ebb8c7327a8cb8c0b4f224de06fec52238fdb7d543338005a4cbed5eb4",
+  "jsVerifier": {
+    "ok": true,
+    "kind": "batch",
+    "digest": "de9ca4ebb8c7327a8cb8c0b4f224de06fec52238fdb7d543338005a4cbed5eb4",
+    "denominator": "512",
+    "decision": "no-forced-path-majority",
+    "racesVerified": 512
+  },
+  "pythonVerifier": {
+    "ok": true,
+    "kind": "batch",
+    "digest": "de9ca4ebb8c7327a8cb8c0b4f224de06fec52238fdb7d543338005a4cbed5eb4",
+    "denominator": "512",
+    "decision": "no-forced-path-majority",
+    "racesVerified": 512,
+    "runtime": "Python 3.13"
+  },
+  "claims": [
+    "exact BigInt producer",
+    "independent JS verifier",
+    "independent Python Fraction verifier",
+    "complete witness verification",
+    "fixed-denominator aggregation"
+  ]
+}

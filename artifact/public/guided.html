@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>RaceCert · Guided booth demo</title>
+  <link rel="stylesheet" href="/guided.css">
+  <script src="/guided.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#stage">Skip to current step</a>
+  <header class="masthead">
+    <a class="brand" href="/guided.html" aria-label="RaceCert guided demo home">Race<span>Cert</span><small>GUIDED DEMO</small></a>
+    <div class="view-controls">
+      <button id="presenter-toggle" type="button" class="secondary" aria-pressed="false" disabled>Presenter view</button>
+      <a class="advanced" href="/index.html">Advanced interface <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">MOBICOM 2026 / ACM STUDENT RESEARCH COMPETITION</p>
+      <h1 id="intro-title">A arrives first. Which path has the shorter delay?</h1>
+      <div class="author-affiliations"><span>Huaijin Ran<br><small>Nanyang Technological University</small></span><span>Haoyi Zhang<br><small>Xi’an Jiaotong-Liverpool University</small></span></div>
+      <p>Run one recorded example, change its error bounds, and inspect the histories that still fit.</p>
+    </section>
+    <nav class="steps" aria-label="Guided steps">
+      <ol>
+        <li><button type="button" data-step="0"><span>1</span>Inspect log</button></li>
+        <li><button type="button" data-step="1"><span>2</span>Certify Δ</button></li>
+        <li><button type="button" data-step="2"><span>3</span>Widen η</button></li>
+        <li><button type="button" data-step="3"><span>4</span>Explore worlds</button></li>
+        <li><button type="button" data-step="4"><span>5</span>Edit + rehash</button></li>
+        <li><button type="button" data-step="5"><span>6</span>Retained 512</button></li>
+      </ol>
+    </nav>
+    <nav id="workflow-controls" class="workflow-controls" aria-label="Current step controls">
+      <p id="workflow-current" class="workflow-current" aria-live="polite" aria-atomic="true">Step 1 / 6 · Inspect log</p>
+      <div class="workflow-buttons">
+        <button id="workflow-previous" type="button" aria-keyshortcuts="ArrowLeft" disabled>Previous</button>
+        <button id="workflow-action" type="button" class="primary" aria-keyshortcuts="Enter" disabled>Continue to certification →</button>
+        <button id="workflow-cancel" type="button" aria-describedby="workflow-cancel-note" disabled>Cancel run</button>
+        <button id="workflow-next" type="button" aria-keyshortcuts="ArrowRight" disabled>Next</button>
+        <button id="workflow-restart" type="button" aria-keyshortcuts="R" disabled>Restart</button>
+        <button id="workflow-help" type="button" aria-expanded="false" aria-controls="workflow-help-content" disabled>Help / keys</button>
+      </div>
+      <p id="workflow-cancel-note" class="workflow-cancel-note" hidden>Cancel stops browser waiting and discards the current result. Server calculation or capture may continue. Retry only by explicitly running an action.</p>
+      <div id="workflow-help-content" class="workflow-help" hidden>
+        <p id="help-current">Current step: 1 / 6 · Inspect log</p>
+        <p><kbd>←</kbd> / <kbd>→</kbd>: previous / next step. <kbd>Enter</kbd>: run the current step’s explicit action (step 1 only continues to certification). <kbd>R</kbd>: restart at step 1 with η = 1000 µs selected; clear claims, reset the LIVE selection and collapse its panel.</p>
+        <p>Navigation and restart never run a producer, verifier or capture. Shortcuts are inactive while busy, on held/repeated keys, with modifiers, or while typing / using a select / editing content. On buttons, links and disclosure summaries, Enter keeps its native action and never also runs the step. Tab reaches all controls. Presenter view compacts the header and uses the fixed action bar instead of duplicate in-step action buttons. Evidence and caveats remain available.</p>
+        <p>Cancel run is available only during a teaching, retained or LIVE run, not while loading catalog metadata. Tab to Cancel run and use Enter or Space. Cancellation discards the current result; it does not confirm that server calculation or capture has stopped. Retry, navigation and restart remain explicit actions.</p>
+      </div>
+    </nav>
+    <section id="stage" class="stage" aria-labelledby="stage-title" aria-busy="false"></section>
+    <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <p class="source-note"><strong>Teaching source.</strong> Steps 1–5 use a fixed illustrative input added for presentation (canonical source: frozen-deterministic). It is outside the published 6 fixtures and outside the retained 512. No synchronized endpoint offsets are assumed. Verifiers check model consistency, not physical capture provenance or the credibility of declared error budgets.</p>
+    <details id="live-panel" class="live-panel">
+      <summary>Optional · Capture fresh LIVE loopback traffic</summary>
+      <div class="live-body">
+        <p>Local UDP capture, not a replay. Timing, digest, and verdict can vary. These runs do not change the retained campaign.</p>
+        <label for="live-profile">Traffic profile</label>
+        <select id="live-profile" disabled><option>Loading local profiles…</option></select>
+        <p id="live-description" class="muted"></p>
+        <p class="muted">LIVE bounds: sender/receiver rate error 200 ppm; per-read η = 2 µs; margin = 500 µs.</p>
+        <button id="live-run" type="button" class="primary" disabled>Capture + verify</button>
+        <p id="catalog-status" class="muted" role="status"></p>
+        <div id="live-result" aria-live="polite"></div>
+      </div>
+    </details>
+    <footer>Offline assets · Exact rational certificates · Two independent verifiers <span>No step runs automatically.</span></footer>
+    <noscript><p class="notice error">Enable JavaScript to call the local APIs. No verified result is available without it.</p></noscript>
+  </main>
+</body>
+</html>

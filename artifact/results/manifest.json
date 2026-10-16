@@ -1,0 +1,20 @@
+{
+  "schema": "racecert-result-manifest-v1",
+  "files": [
+    {
+      "file": "campaign-raw.jsonl",
+      "bytes": "978937",
+      "sha256": "98132dcbf663943b29becd7b7f5ce1faddf2a901d5c72a04ea33283be6f9aaa3"
+    },
+    {
+      "file": "campaign-batch.json",
+      "bytes": "1514504",
+      "sha256": "6e9a50c00949bcbf345262dd34ca801f8b6fe0d07e7c56b8495184acfcc5d771"
+    },
+    {
+      "file": "campaign-summary.json",
+      "bytes": "1053",
+      "sha256": "a0466ac52f3328da41826d88b70bef5d1a3c8f79a07460c752068145500ddb7c"
+    }
+  ]
+}

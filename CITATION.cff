@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the MobiCom 2026 Demo paper when using RaceCert."
+type: software
+title: "RaceCert: Exact Certificates for Two-Path Races"
+authors:
+  - family-names: Ran
+    given-names: Huaijin
+    affiliation: Nanyang Technological University
+  - family-names: Zhang
+    given-names: Haoyi
+    affiliation: Xi'an Jiaotong-Liverpool University
+repository-code: "https://github.com/Haoyi-Zhang/RaceCert"
+preferred-citation:
+  type: conference-paper
+  title: "Demo: RaceCert: Exact Certificates for Two-Path Races"
+  authors:
+    - family-names: Ran
+      given-names: Huaijin
+    - family-names: Zhang
+      given-names: Haoyi
+  year: 2026
+  doi: "10.1145/3795866.3848465"
+  conference:
+    name: "The 32nd Annual International Conference on Mobile Computing and Networking"

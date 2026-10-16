@@ -1,0 +1,1346 @@
+{
+  "schema": "racecert-presentation-evidence-v1",
+  "scope": "Controlled illustrative inputs added for the presentation; separate from the six published fixtures and retained 512-race campaign. No physical network experiment is claimed.",
+  "sweep": [
+    {
+      "etaUs": "0",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "0",
+        "etaReceiverUs": "0",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "0",
+          "etaReceiverUs": "0",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "2000",
+            "d": "1"
+          },
+          "hi": {
+            "n": "2000",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "force-b",
+        "feasible": [
+          "force-b"
+        ],
+        "witnesses": [],
+        "digest": "9e87d4bc34030c85e02c17bd7916f6653173171c6e71ea2d0a120e7d63746308"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "9e87d4bc34030c85e02c17bd7916f6653173171c6e71ea2d0a120e7d63746308",
+          "outcome": "force-b",
+          "witnessesVerified": 0
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "9e87d4bc34030c85e02c17bd7916f6653173171c6e71ea2d0a120e7d63746308",
+          "outcome": "force-b",
+          "witnessesVerified": 0,
+          "runtime": "Python 3.13"
+        }
+      }
+    },
+    {
+      "etaUs": "249",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "249",
+        "etaReceiverUs": "249",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "249",
+          "etaReceiverUs": "249",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "1004",
+            "d": "1"
+          },
+          "hi": {
+            "n": "2996",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "force-b",
+        "feasible": [
+          "force-b"
+        ],
+        "witnesses": [],
+        "digest": "2023fb128bc1804bc13e41fcea2e2fe4a67b4e361ff344aacf1987ae3f468c03"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "2023fb128bc1804bc13e41fcea2e2fe4a67b4e361ff344aacf1987ae3f468c03",
+          "outcome": "force-b",
+          "witnessesVerified": 0
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "2023fb128bc1804bc13e41fcea2e2fe4a67b4e361ff344aacf1987ae3f468c03",
+          "outcome": "force-b",
+          "witnessesVerified": 0,
+          "runtime": "Python 3.13"
+        }
+      }
+    },
+    {
+      "etaUs": "250",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "250",
+        "etaReceiverUs": "250",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "250",
+          "etaReceiverUs": "250",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "1000",
+            "d": "1"
+          },
+          "hi": {
+            "n": "3000",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "ambiguous",
+        "feasible": [
+          "neutral",
+          "force-b"
+        ],
+        "witnesses": [
+          {
+            "outcome": "neutral",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "250",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-250",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "250",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "8749",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "250",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-250",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "3500",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1001",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3501",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1001",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "1000",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "force-b",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "7999",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "4000",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "2001",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "4001",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "2001",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "2000",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          }
+        ],
+        "digest": "eb2ca9e099fe7f90c7939a8f92557a089574b386dd33605bde7817f39760f576"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "eb2ca9e099fe7f90c7939a8f92557a089574b386dd33605bde7817f39760f576",
+          "outcome": "ambiguous",
+          "witnessesVerified": 2
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "eb2ca9e099fe7f90c7939a8f92557a089574b386dd33605bde7817f39760f576",
+          "outcome": "ambiguous",
+          "witnessesVerified": 2,
+          "runtime": "Python 3.13"
+        }
+      }
+    },
+    {
+      "etaUs": "750",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "750",
+        "etaReceiverUs": "750",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "750",
+          "etaReceiverUs": "750",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "-1000",
+            "d": "1"
+          },
+          "hi": {
+            "n": "5000",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "ambiguous",
+        "feasible": [
+          "neutral",
+          "force-b"
+        ],
+        "witnesses": [
+          {
+            "outcome": "neutral",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "9499",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "3000",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3001",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "force-b",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "-250",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "250",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-250",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "7249",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-250",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "250",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "4500",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "3001",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "4501",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "3001",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "3000",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          }
+        ],
+        "digest": "59de6e90e11a1be44a128f1ad4bf07d5e46808ef7c2b00d720cd93ba9e057220"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "59de6e90e11a1be44a128f1ad4bf07d5e46808ef7c2b00d720cd93ba9e057220",
+          "outcome": "ambiguous",
+          "witnessesVerified": 2
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "59de6e90e11a1be44a128f1ad4bf07d5e46808ef7c2b00d720cd93ba9e057220",
+          "outcome": "ambiguous",
+          "witnessesVerified": 2,
+          "runtime": "Python 3.13"
+        }
+      }
+    },
+    {
+      "etaUs": "751",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "751",
+        "etaReceiverUs": "751",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "751",
+          "etaReceiverUs": "751",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "-1004",
+            "d": "1"
+          },
+          "hi": {
+            "n": "5004",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "ambiguous",
+        "feasible": [
+          "force-a",
+          "neutral",
+          "force-b"
+        ],
+        "witnesses": [
+          {
+            "outcome": "force-a",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "1501",
+                  "d": "2"
+                },
+                "readErrorAUs": {
+                  "n": "-1501",
+                  "d": "2"
+                },
+                "readErrorBUs": {
+                  "n": "1501",
+                  "d": "2"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "18497",
+                  "d": "2"
+                },
+                "readErrorAUs": {
+                  "n": "1501",
+                  "d": "2"
+                },
+                "readErrorBUs": {
+                  "n": "-1501",
+                  "d": "2"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "2499",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3502",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1003",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "-1002",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "neutral",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "9499",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "3000",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3001",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "force-b",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "-501",
+                  "d": "2"
+                },
+                "readErrorAUs": {
+                  "n": "501",
+                  "d": "2"
+                },
+                "readErrorBUs": {
+                  "n": "-501",
+                  "d": "2"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "14495",
+                  "d": "2"
+                },
+                "readErrorAUs": {
+                  "n": "-501",
+                  "d": "2"
+                },
+                "readErrorBUs": {
+                  "n": "501",
+                  "d": "2"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "4501",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "3003",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "4502",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "3003",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "3002",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          }
+        ],
+        "digest": "86d82359d97f4695c7e4448627eeaf68f94b8c8d51cb897e357ffbf159c963a6"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "86d82359d97f4695c7e4448627eeaf68f94b8c8d51cb897e357ffbf159c963a6",
+          "outcome": "ambiguous",
+          "witnessesVerified": 3
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "86d82359d97f4695c7e4448627eeaf68f94b8c8d51cb897e357ffbf159c963a6",
+          "outcome": "ambiguous",
+          "witnessesVerified": 3,
+          "runtime": "Python 3.13"
+        }
+      }
+    },
+    {
+      "etaUs": "1000",
+      "observations": {
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "sendAUs": "0",
+        "sendBUs": "4000",
+        "recvAUs": "10000",
+        "recvBUs": "12000",
+        "closeUs": "15000",
+        "epsilonSenderPpm": "0",
+        "epsilonReceiverPpm": "0",
+        "etaSenderUs": "1000",
+        "etaReceiverUs": "1000",
+        "marginUs": "1000"
+      },
+      "certificate": {
+        "schema": "racecert-v2",
+        "scenarioId": "guided-teaching-arrival-order",
+        "source": "frozen-deterministic",
+        "capture": {
+          "kind": "fixed-illustrative-teaching-input",
+          "provenance": "Added for presentation; outside published 6 fixtures and retained 512."
+        },
+        "evidenceKind": "paired-arrivals",
+        "assumptions": {
+          "epsilonSenderPpm": "0",
+          "epsilonReceiverPpm": "0",
+          "etaSenderUs": "1000",
+          "etaReceiverUs": "1000",
+          "marginUs": "1000"
+        },
+        "observations": {
+          "sendAUs": "0",
+          "sendBUs": "4000",
+          "recvAUs": "10000",
+          "recvBUs": "12000",
+          "closeUs": "15000"
+        },
+        "interval": {
+          "lo": {
+            "n": "-2000",
+            "d": "1"
+          },
+          "hi": {
+            "n": "6000",
+            "d": "1"
+          },
+          "loClosed": "true",
+          "hiClosed": "true"
+        },
+        "outcome": "ambiguous",
+        "feasible": [
+          "force-a",
+          "neutral",
+          "force-b"
+        ],
+        "witnesses": [
+          {
+            "outcome": "force-a",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "875",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-875",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "875",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "9124",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "875",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-875",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "2250",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3751",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1501",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "-1500",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "neutral",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "9499",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "500",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-500",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "3000",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "3001",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          },
+          {
+            "outcome": "force-b",
+            "assignment": {
+              "sender": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "-375",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "375",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "-375",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "receiver": {
+                "rate": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "offsetUs": {
+                  "n": "6874",
+                  "d": "1"
+                },
+                "readErrorAUs": {
+                  "n": "-375",
+                  "d": "1"
+                },
+                "readErrorBUs": {
+                  "n": "375",
+                  "d": "1"
+                },
+                "readErrorCloseUs": null
+              },
+              "real": {
+                "sendAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "sendBUs": {
+                  "n": "4750",
+                  "d": "1"
+                },
+                "receiveAUs": {
+                  "n": "3501",
+                  "d": "1"
+                },
+                "receiveBUs": {
+                  "n": "4751",
+                  "d": "1"
+                },
+                "closeUs": null,
+                "delayAUs": {
+                  "n": "3501",
+                  "d": "1"
+                },
+                "delayBUs": {
+                  "n": "1",
+                  "d": "1"
+                },
+                "delayDifferenceUs": {
+                  "n": "3500",
+                  "d": "1"
+                },
+                "completionWaitAUs": {
+                  "n": "0",
+                  "d": "1"
+                },
+                "completionWaitBUs": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            }
+          }
+        ],
+        "digest": "341f58e848ffbe833ce4482748ac599a767f29fc1f575e5b713796a81792a505"
+      },
+      "checks": {
+        "javascript": {
+          "ok": true,
+          "kind": "race",
+          "digest": "341f58e848ffbe833ce4482748ac599a767f29fc1f575e5b713796a81792a505",
+          "outcome": "ambiguous",
+          "witnessesVerified": 3
+        },
+        "python": {
+          "ok": true,
+          "kind": "race",
+          "digest": "341f58e848ffbe833ce4482748ac599a767f29fc1f575e5b713796a81792a505",
+          "outcome": "ambiguous",
+          "witnessesVerified": 3,
+          "runtime": "Python 3.13"
+        }
+      }
+    }
+  ],
+  "oneMicrosecondMutation": {
+    "field": "witnesses[0].assignment.real.delayAUs",
+    "before": {
+      "n": "1",
+      "d": "1"
+    },
+    "after": {
+      "n": "2",
+      "d": "1"
+    },
+    "rehashDigest": "ca90fc3a8b872eb9758a6ee29973a4747dcf5767d6c085dd321e0be88177bb87",
+    "checks": {
+      "javascript": {
+        "ok": false,
+        "reason": "delay equations fail"
+      },
+      "python": {
+        "ok": false,
+        "reason": "delay equations fail",
+        "runtime": "Python 3.13"
+      }
+    }
+  },
+  "denominatorComparison": {
+    "forceB": "191",
+    "allRaces": "512",
+    "ambiguousExcluded": "133",
+    "resolvedSubset": "379",
+    "interpretation": "191/379 is a majority only within the resolved subset; 191/512 is not a full-set forced majority."
+  }
+}
